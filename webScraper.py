@@ -48,6 +48,7 @@ def scraper(url,filePath):
 print(len(urls))
 print(urls)'''
 
+
 for i in range(136,151):
     print(i)
     scraper(f'https://www.sneakerjagers.com/en/releases/out-now/page/{i}','data/trainData')

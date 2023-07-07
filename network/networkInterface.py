@@ -25,5 +25,8 @@ class runModel():
         with torch.no_grad():
             output = self.net(data)
             return -output[0][0], output.round() == 1
+        
+    def saveModel(self):
+        torch.save(self.net.state_dict(), self.modelPath)
             
         
